@@ -32,3 +32,43 @@ src/fonts/src/Roboto-BoldItalic.ttf
 src/fonts/src/Roboto-Italic.ttf
 src/fonts/src/Roboto-Regular.ttf
 ht.access
+readme.md
+app/index.html
+app/css/app.min.css
+app/fonts/roboto-bold-webfont.woff2
+app/fonts/roboto-bolditalic-webfont.woff2
+app/fonts/roboto-italic-webfont.woff2
+app/fonts/roboto-regular-webfont.woff2
+app/fonts/src/readme.txt
+app/fonts/src/Roboto-Bold.ttf
+app/fonts/src/Roboto-BoldItalic.ttf
+app/fonts/src/Roboto-Italic.ttf
+app/fonts/src/Roboto-Regular.ttf
+app/images/favicon.png
+app/images/dest/preview.jpg
+app/images/src/Greenmech.png
+app/images/src/Greenmech@0,5x.png
+app/images/src/Greenmech@0,25x.png
+app/images/src/Greenmech@2x.png
+app/images/src/Header@2x.jpg
+app/images/src/Heder.jpg
+app/images/src/Heder@0,5x.jpg
+app/images/src/Heder@0,25x.jpg
+app/images/src/Heder@2x.jpg
+app/images/src/Krasnaya drobilka.png
+app/images/src/Krasnaya drobilka@0,5x.png
+app/images/src/Krasnaya drobilka@0,25x.png
+app/images/src/Krasnaya drobilka@2x.png
+app/images/src/preview.jpg
+app/images/src/Heder_2/Heder.jpg
+app/images/src/Heder_2/Heder@0,5x.jpg
+app/images/src/Heder_2/Heder@0,25x.jpg
+app/images/src/Heder_2/Heder@2x.jpg
+app/images/src/icons/001-consultation.svg
+app/images/src/icons/002-choice.svg
+app/images/src/icons/003-opyt.svg
+app/images/src/icons/004-onestop.svg
+app/images/src/icons/005-oplata.svg
+app/images/src/icons/006-profi.svg
+drobilka_workspace.code-workspace
+.npmrc
