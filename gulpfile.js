@@ -64,7 +64,7 @@ function styles() {
 
 function startwatch() {
 	watch(baseDir  + '/**/' + preprocessor + '/**/*', styles);
-	watch('./ {' + fileswatch + '}').on('change', browserSync.reload);
+	watch('./*.html').on('change', browserSync.reload);
 	watch([baseDir + '/**/*.js', '!' + paths.scripts.dest + '/*.min.js'], scripts);
 }
 
