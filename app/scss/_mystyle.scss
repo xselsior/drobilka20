@@ -1,70 +1,33 @@
-@function strip-unit($value) {
-    @return $value / ($value * 0 + 1);
-  }
-  
-  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-    $u1: unit($min-vw);
-    $u2: unit($max-vw);
-    $u3: unit($min-font-size);
-    $u4: unit($max-font-size);
-  
-    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-      & {
-        font-size: $min-font-size;
-        @media screen and (min-width: $min-vw) {
-          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-        }
-        @media screen and (min-width: $max-vw) {
-          font-size: $max-font-size;
-        }
-      }
-    }
-  }
-  
-  $min_width: 320px;
-  $max_width: 1200px;
-  $min_font: 16px;
-  $max_font: 24px;
-  
-  html {
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  }
-  
-  //// Для мобильного и десктоп
-  $mod_1: 1.2; // mobile
-  $mod_2: 1.5; // desktop
-  
-  h1 {  
-    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-  }
-  h2 {  
-    font-size: $mod_1*$mod_1*$mod_1 *1rem; 
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-  }
-  h3 { 
-    font-size: $mod_1*$mod_1 *1rem;
-    @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-  }
+p {margin-bottom: 1.15rem;}
 
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
 
-  @media screen and (min-width: 320px) {
-    html {
-      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    }
-  }
-  @media screen and (min-width: 1000px) {
-    html {
-      font-size: 22px;
-    }
-  }
-  
-  body {
-    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-  }
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
   
   @mixin for-phone-only {
     @media (max-width: 720px) { @content; }
   }
+/// Навигация
 
-  
+
+
+
+
