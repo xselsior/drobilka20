@@ -10,22 +10,125 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
 	<meta property="og:image" content="img/dest/preview.jpg">
+	<link rel="stylesheet" href="app/css/bootstrap.min.css">
 	<link rel="stylesheet" href="app/css/app.min.css">
-
+	
 </head>
 
 <body>
+	<!-- MENU
+    ================================================== -->	
+
+	
 	<!-- Header -->
 	<header id="header">
+		  <!--Below this is the navbar html -->
+		  <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"><a class="navbar-brand" href="#home"><img class="camera aligncenter" src="app/images/icons/logo_224.png" alt=""></a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-menubuilder">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#header">Начало</a>
+						</li>
+						<li><a href="#about">Выбор дробилки</a>
+						</li>
+						<li><a href="#projects">projects</a>
+						</li>
+						<li><a href="#contact">contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="hero"><h1>
 		Аренда дробилки дерева и измельчителя веток.
 		</h1></div>
 
 	</header>
+	<div class="container">
+		<div class="row mt presentation">
+		  <img class="camera aligncenter" src="app/images/img/camera.png" alt="">
+		  <h1 class="centered">WE ARE POLAROYD</h1>
+		  <hr>
 	
+		  <div class="col-lg-4 col-md-4">
+			<h3>About Our Company</h3>
+		  </div>
+	
+		  <div class="col-lg-4 col-md-4">
+			<p>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since, when an unknown ristique senectus et netus.</p>
+		  </div>
+	
+		  <div class="col-lg-4 col-md-4">
+			<p>Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Dummy text of the printing and typesetting.</p>
+		  </div>
+		</div>
+		<!-- /row -->
+	
+		<div class="row mt2">
+		  <div class="col-md-12 centered">
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-heart-outline large-icon"></i>
+			  <h4>GRAPHICS DESIGN</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-monitor-outline large-icon"></i>
+			  <h4>WEB DESIGN</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-pie-outline large-icon"></i>
+			  <h4>CODING</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-plus-empty large-icon"></i>
+			  <h4>APPLICATION</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-wineglass-outline large-icon"></i>
+			  <h4>WEB DEVELOPMENT</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+			<div class="col-md-4 services-bordered">
+			  <i class="icon ion-ios7-lightbulb-outline large-icon"></i>
+			  <h4>PRODUCTION</h4>
+			  <p>Sed in porttitor dolor. Sed eleifend vulputate nulla, congue iaculis arcu mattis porta.</p>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="row mt">
+		  <div id="filters-container" class="cbp-l-filters-alignRight container col-sm-12">
+			<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+			  All
+			  <div class="cbp-filter-counter"></div>
+			</div>
+			<div data-filter=".identity" class="cbp-filter-item">
+			  Identity
+			  <div class="cbp-filter-counter"></div>
+			</div>
+			<div data-filter=".web-design" class="cbp-filter-item">
+			  Web Design
+			  <div class="cbp-filter-counter"></div>
+			</div>
+			<div data-filter=".graphic" class="cbp-filter-item">
+			  Graphic
+			  <div class="cbp-filter-counter"></div>
+			</div>
+		  </div>
+		  <!-- end:Filter -->
+		</div>
+	  </div>	
 
 	<script src="../app/js/app.min.js"></script>
-
+	<script src="../app/js/jquery.min.js"></script>
+	<script src="../app/js/bootstrap.min.js"></script>
 </body>
 
 </html>

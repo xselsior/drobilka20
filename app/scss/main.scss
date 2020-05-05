@@ -8,17 +8,22 @@ body { font-size: 16px; }
     min-height: 620px;
     width: 100%;
     background-image: url(../Images/Heder_2/Heder.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
     padding: 50px;
     @include for-phone-only {    
-        background-size: cover; 
+        background-size: contain; 
      }
 }
 .hero {
     background-color: rgba(0, 0, 0, 0.33);
     transform: skew(-30deg);
     margin: 50px auto 20px auto;
+    width: 75%;
+    @include for-phone-only {
+        width: 100%;
+    }
     h1 {
         color: #fff;
         font-family: $primfont;
