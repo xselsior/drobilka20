@@ -16,13 +16,18 @@ body {
 	margin: 0;
 	height: 100%;
 	z-index: 1000;
-	color: #696E74;
+	color: rgb(0, 0, 0);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $primfont;
-	font-weight: 700;
+  font-weight: 700;
+  
 }
+h2, h3, h4, h5, h6 {
+  color:#A79A74 ;
+}
+
 
 h2 {font-size: 3.157em;}
 
@@ -143,11 +148,13 @@ h5 {font-size: 1.333em;}
 }
 
 h1 {
-  $map: (576px: 22px, 768px: 24px, 992px: 52px);
+  $map: (576px: 20px, 768px: 24px, 992px: 52px);
   @include poly-fluid-sizing('font-size', $map);
- 
 }
-
+h3 {
+  $map: (576px: 24px, 768px: 26px, 992px: 52px);
+  @include poly-fluid-sizing('font-size', $map);
+}
 ///
 p {
 	padding: 0;
@@ -156,7 +163,7 @@ p {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 24px;
-	color: #696E74;
+	color: rgb(0, 0, 0);
 	margin-top: 10px;
 }
 
@@ -236,8 +243,16 @@ a img {
 /*	################################################################
 	2. HELPERS & SECTIONS
 ################################################################# */
+.cust-margin-top {
+  margin-top: 70;
+  @include for-phone-only {
+    margin-top: 10px;
+}}
 .mt {
-	margin-top: 50px;
+  margin-top: 50px;
+  @include for-phone-only {
+    margin-top: 30px;
+  }
 }
 
 .mt2 {
@@ -294,22 +309,24 @@ a img {
 }
 .presentation h1 {
 	font-size: 50px;
-	color: #A79A74;
+	color: #8a6d3b;
 }
 
 .presentation h2 {
-	color: #2f2f2f;
+	color: #8a6d3b;
 	font-weight: 400;
-	font-size: 42px;
+  font-size: 42px;
+    $map: (576px: 32px, 768px: 34px, 992px: 52px);
+    @include poly-fluid-sizing('font-size', $map);
 }
 
 .presentation h3 {
-	color: #2f2f2f;
+	color: #8a6d3b;
 	font-weight: 500;
 }
 
 .presentation h4 {
-	color: #2f2f2f;
+	color: #8a6d3b;
 	font-weight: 300;
 }
 
@@ -317,7 +334,10 @@ a img {
 	margin-top: 30px;
 }
 
-
+.responsiv-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* PL & GR are exclusive values for coloring text in this block. */
 .presentation pl {
 	color: #A79A74;
@@ -334,10 +354,14 @@ a img {
 }
 
 .presentation hr {
-	border-top: 1px solid #D6D6D6;
+	border-top: 2px solid #8a6d3b;
 	margin: auto;
 	width: 50%;
-	margin-bottom: 60px;
+  margin-bottom: 60px;
+  @include for-phone-only {
+    margin-bottom: 15px;
+  }
+  
 }
 
 /*	################################################################
@@ -347,11 +371,12 @@ a img {
 .services-bordered {
 	padding: 30px 15px;
 	border: 3px double;
-	border-color: #e8e8e8;
+  border-color: #e8e8e8;
+  min-width: 300px;
 }
 
 .services-bordered h4 {
-	color: #A79A74;
+	color: #e6b560;
 	font-size: 16px;
 }
 
@@ -570,9 +595,9 @@ sup {
 	10. BLOG STRUCTURES
 ################################################################# */
 
-.blog-list {
+// .blog-list {
 
-}
+// }
 
 .blog-list h5, .blog-list h6 {
 	font-weight: 300;
@@ -701,9 +726,9 @@ sup {
   padding: 40px 0;
 }
 
-.contact-form {
+// .contact-form {
 
-}
+// }
 
 .contact-form label {
    color: #999;
@@ -824,7 +849,7 @@ sup {
   border-bottom-width: 1px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-  color: rgba(233, 212, 66,1);
+  color: rgba(247, 179, 62,1);
   background-color: rgba(255, 255, 255, 0.02);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,

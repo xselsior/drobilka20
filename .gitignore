@@ -284,3 +284,6 @@ app/css/bootstrap.min.css
 app/js/modernizr.min.js
 app/js/jquery.min.js
 app/js/bootstrap.min.js
+app/images/icons/Greenmech.png
+app/images/icons/Greenmech@0,5x.png
+app/images/icons/worker.svg
