@@ -29,7 +29,7 @@ h2, h3, h4, h5, h6 {
 }
 
 
-h2 {font-size: 3.157em;}
+h2 {font-size: 3.157em;margin: 1.2em auto;}
 
 h3 {font-size: 2.369em;}
 
@@ -151,10 +151,10 @@ h1 {
   $map: (576px: 20px, 768px: 24px, 992px: 52px);
   @include poly-fluid-sizing('font-size', $map);
 }
-h3 {
-  $map: (576px: 24px, 768px: 26px, 992px: 52px);
-  @include poly-fluid-sizing('font-size', $map);
-}
+// h3 {
+//   $map: (576px: 20px, 768px: 26px, 992px: 52px);
+//   @include poly-fluid-sizing('font-size', $map);
+// }
 ///
 p {
 	padding: 0;
@@ -349,6 +349,7 @@ a img {
 
 
 .presentation .camera {
+  margin: 2.6em auto;
 	width: 65px;
 	height: auto;
 }
@@ -665,7 +666,7 @@ sup {
 }
 
 #blogwrap{
-	background:url(../img/blog-bg.jpg) no-repeat center top;
+	// background:url(../img/blog-bg.jpg) no-repeat center top;
 	margin-top:0;
 	padding-top:220px;
 	text-align:center;
@@ -894,3 +895,83 @@ sup {
 }
 } */
 // Конец меню
+.vybor-wraper {
+  width: 100%;
+  background-image: url(app/images/brushedallue_blue.png);
+background-repeat: repeat;
+background-attachment: fixed;
+}
+#vybor {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow:  -9px -9px 11px #a79a74;
+    margin: 0 auto;
+    display: block;
+
+  }
+  h3 {
+    
+    margin: auto;
+    text-align: center;
+    background-color: #216bb7;
+    width: 60%;
+    -webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    padding: 5px;
+    @include for-phone-only {
+      font-size: 32px;
+    }
+
+  }
+  p {
+font-size: 18px;
+  }
+  ul {
+    font-style: italic;
+    padding: 5px 8px;
+  }
+}
+.vyborflex {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 22px auto;
+  padding: 44px 0;
+  @include for-phone-only {
+    padding: 0;
+  }
+}
+.greenmech {
+  top: 6px;
+  position: absolute;
+  z-index: 10;
+  left: 215px;
+  @include for-phone-only {
+      position: static;
+      text-align: center;
+  }
+}
+.scorpio {
+  top: 12px;
+  position: absolute;
+  z-index: 10;
+  left: 215px;
+  @include for-phone-only {
+      position: static;
+      text-align: center;
+  }
+}
+// .flexcolmid {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
