@@ -236,10 +236,10 @@ a img {
 	vertical-align: bottom;
 }
 
-.sidemenu {
+/* .sidemenu {
   visibility: hidden;
   height: 0;
-}
+} */
 /*	################################################################
 	2. HELPERS & SECTIONS
 ################################################################# */
@@ -897,7 +897,7 @@ sup {
 // Конец меню
 .vybor-wraper {
   width: 100%;
-  background-image: url(app/images/brushedallue_blue.png);
+  background-image: url(../images/brushedallue_blue.png);
 background-repeat: repeat;
 background-attachment: fixed;
 }
@@ -946,6 +946,8 @@ font-size: 18px;
   position: relative;
   margin: 22px auto;
   padding: 44px 0;
+  p,ul {color: #f8f8f8;}
+  
   @include for-phone-only {
     padding: 0;
   }
@@ -970,12 +972,28 @@ font-size: 18px;
       text-align: center;
   }
 }
-.telefon {
+.telefon p{
   display: block;
     font-size: 26px;
     text-align: center;
     color: #ff6f2b;
     font-weight: 900;
+    $map: (576px: 20px, 768px: 24px, 992px: 42px);
+    @include poly-fluid-sizing('font-size', $map);
+}
+/* p.telefon {
+  $map: (576px: 20px, 768px: 24px, 992px: 42px);
+  @include poly-fluid-sizing('font-size', $map);
+} */
+
+.galerea {
+  display: flex;
+  padding: 5px 2.5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+padding: 5px;
+  }
 }
 // .flexcolmid {
 //   display: flex;
