@@ -11,7 +11,7 @@ body { font-size: 16px; overflow-x: hidden; }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    margin-top: 50px;
+    // margin-top: 50px;
     box-shadow: 0px 13px 18px 6px #8a6d3b;
     @include for-phone-only {    
         background-size: cover; 
@@ -20,19 +20,19 @@ body { font-size: 16px; overflow-x: hidden; }
 .hero {
     background-color: rgba(0, 0, 0, 0.33);
     transform: skew(-30deg);
-    margin: 50px auto 20px auto;
+    margin: auto;
     width: 75%;
     @include for-phone-only {
         width: 90%;
     }
     h1 {
-        color: #e6b560;
+        color: #f7c062;
         font-family: $primfont;
         text-align: center;
-        text-shadow: -2px 3px #841f14cc
+        text-shadow: -1px 1px #841f14cc
 
     }
     @include for-phone-only {    
-        margin: 10px auto 20px auto; 
+        margin: 0px auto 20px auto; 
      }
 }

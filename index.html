@@ -10,8 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="app\images\favicon.ico">
 	<meta property="og:image" content="img/dest/preview.jpg">
-	<link rel="stylesheet" href="app/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="app/css/app.min.css">
+	<!-- <link rel="stylesheet" href="app/css/bootstrap.min.css"> -->
 	
 </head>
 
@@ -19,26 +21,21 @@
 	<!-- MENU
     ================================================== -->	
 
-	<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div>
-			<div class="navbar-header"><a class="navbar-brand" href="#home"><img class="camera aligncenter" src="app/images/icons/logo_224.png" alt=""></a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Меню</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-menubuilder">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#header">Начало</a>
-					</li>
-					<li><a href="#vybor">Выбор дробилки</a>
-					</li>
-					<li><a href="#price">Цены</a>
-					</li>
-					<li><a href="#contact">Контакты</a>
-					</li>
-				</ul>
-			</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#custnavigation" aria-controls="custnavigation" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="custnavigation">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link active" href="#header">О нас<span class="sr-only">(Начало)</span></a>
+			<a class="nav-item nav-link" href="#vybor">Выбор дробилки</a>
+			<a class="nav-item nav-link" href="#Price">Цены</a>
+			<a class="nav-item nav-link" href="#Contact">Контакты</a>
+		  </div>
 		</div>
-	</div>
+	  </nav>
+
 	<!-- Header -->
 	<header class="container-fluid" id="header">
 		  <!--Below this is the navbar html -->
@@ -53,10 +50,12 @@
 </div>
 	</header>
 	<div class="container">
-		<div class="row cust-margin-top presentation">
-		  <img class="camera aligncenter" src="app/images/icons/Greenmech.png" alt="">
-		  <h2 class="centered">Аренда с гарантией</h2>
-		  <hr>
+		<div class="row presentation">
+		  <div class="col-12">
+			  <img class="camera aligncenter" src="app/images/icons/Greenmech.png" alt="Дробилка иконка">
+	  		  <h2 class="centered">Аренда с гарантией</h2>
+	  		  <hr>
+		  </div>
 	
 		  <div class="col-lg-4 col-md-4">
 			<h3>О нашей компании</h3>
@@ -140,37 +139,45 @@
 		<source media="(min-width: 800px)" srcset="app/images/vybor-1.jpg">
 		<img src="app/images/vybor-1.jpg">
 		</picture></div>
-	  <div class="col-md-6"><p>Дробилка прекрасно себя зарекомендовала при эксплуатации в сложных условиях. Заболоченные места, бездорожье — это не проблема.
-	  Гусеничный привод позволяет измельчителю добираться до мест,
-	  в которые колёсные дробилки доставляются с трудом. Кроме этого, имеет высокую устойчивость на наклонах и
-	  участках с плохим сцеплением.
-	  </p>
+	  <div class="col-md-6"><p>Skorpion 250 SDT это прицепная дисковая дробилка. Машина способна перерабатывать порубочные остатки (ветвки, горбыль, стволы деревьев с шириной не более 250 мм.). Данная дробилка установлена на одноосном прицепе, может транспортироваться по дорогам общего пользования со скоростью до 80 км/ч.</p>
 	  <ul>
-	  <li>Толщина измельчения 190 мм</li>
-	  <li>Мощность двигателя 50 л.с.</li>
+	<li>Диаметр ветвей 250 мм</li>
+	  <li>Щепа: длинна 9 - 14 мм, толщина до 5 мм.</li>
 	  <li>Скорость диска 1400 об/мин</li>
-	  <li>Управление мощностью No-Stress</li>
-	  <li>Гидравлические подающие ролики - Двойные</li>
+	  <li>Система безопасности - No-stress</li>
+	  <li>Двигатель PERKINS 84 л.с.</li>
 	  </ul></div>
 
 	  </div>
 	  </div></div>
-	  <div class="container-fliud">
-<div class="row galerea">
-	<div class="col-auto"><img src="app/images/Greench_edited_300_1.jpg" alt="Дробилка greenmech"></div>
-	<div class="col-auto"><img src="app/images/Greench_edited_300_2.jpg" alt="Дробилка greenmech в аренду"></div>
-	<div class="col-auto"><img src="app/images/Greench_edited_300_3.jpg" alt="Мощная Дробилка greenmech 19-29"></div>
-	<div class="col-auto"><img src="app/images/Greench_edited_300_4.jpg" alt="Щепорубильная машина greenmech"></div>
-	<div class="col-auto"><img src="app/images/Greench_edited_300_5.jpg" alt="Измельчитель веток greenmech"></div>
-	<div class="col-auto"><img src="app/images/izm_edited_300_1.jpg" alt="Измельчение веток"></div>
-	<div class="col-auto"><img src="app/images/izm_edited_300_2.jpg" alt="дробление веток"></div>
-	<div class="col-auto"><img src="app/images/Scorpio_edited_300_1_2.jpg" alt="Дробилка Scorpion"></div>
-</div>
-	  </div>
+
+	<div class="swiper-container galerea">
+		<div class="swiper-wrapper">
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Greench_edited_300_1.jpg" alt="Дробилка greenmech"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/izm_edited_300_1.jpg" alt="Измельчение веток"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Greench_edited_300_2.jpg" alt="Дробилка greenmech в аренду"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/izm_edited_300_2.jpg" alt="дробление веток"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Greench_edited_300_5.jpg" alt="Измельчитель веток greenmech"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Scorpio_edited_300_1_2.jpg" alt="Дробилка Scorpion"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Greench_edited_300_3.jpg" alt="Мощная Дробилка greenmech 19-29"></div>
+			<div class="col-auto swiper-slide"><img class="img-fluid" src="app/images/Greench_edited_300_4.jpg" alt="Щепорубильная машина greenmech"></div>
+			
+		</div>
+		    <!-- Add Arrows -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+	</div>
+
 
 	<script src="../app/js/app.min.js"></script>
-	<script src="../app/js/jquery.min.js"></script>
-	<script src="../app/js/bootstrap.min.js"></script>
+	<!-- <script src="../app/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../app/js/bootstrap.min.js"></script> -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
 </body>
 
 </html>

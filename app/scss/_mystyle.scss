@@ -244,7 +244,7 @@ a img {
 	2. HELPERS & SECTIONS
 ################################################################# */
 .cust-margin-top {
-  margin-top: 70;
+  margin-top: 70px;
   @include for-phone-only {
     margin-top: 10px;
 }}
@@ -499,7 +499,7 @@ ul.clients li.banner-wrap .featured-thumbnail img:hover {
     height: 20px;
     border: 4px inset #ffffff;
     border-radius: 1px;
-    vertical-align: middle;
+    // vertical-align: middle;
     text-indent: -100%;
     opacity: .3;
     -webkit-transform: rotate(-45deg);
@@ -841,7 +841,22 @@ sup {
   overflow: hidden; 
 } 
 // Menu
-#custom-bootstrap-menu.navbar-default .navbar-brand {
+/* .navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #474747;
+} */
+///
+/* .navbar{background:#222222;}
+.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+.nav-item:hover::after{width:100%;}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+.nav-link{padding:15px 5px;transition:0.2s;}
+.dropdown-item.active, .dropdown-item:active{color:#212529;}
+.dropdown-item:focus, .dropdown-item:hover{background:#fec400; }*/ 
+//MENU 2
+/*  #custom-bootstrap-menu.navbar-default .navbar-brand {
   color: rgba(119, 119, 119, 1);
 }
 #custom-bootstrap-menu.navbar-default {
@@ -878,22 +893,8 @@ sup {
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #474747;
 }
-.navbar-brand>img {
-  // display: block;
-  width: 50px;
-  padding: 5px;
-  vertical-align: middle;
-  position: absolute;
-  top: 2px;
-}
-/* .navbar-header {  
-  width: 30%;
-  p {
-    color: #e8bc3b;
-    font-size: 20px;
-    margin: 0px 49px;
-}
-} */
+ */
+
 // Конец меню
 .vybor-wraper {
   width: 100%;
@@ -972,19 +973,29 @@ font-size: 18px;
       text-align: center;
   }
 }
-.telefon p{
+.telefon {
+  background-color: #0202036b;
+  width: 31%;
+  margin: auto;
   display: block;
+  border-radius: 15px;
+  @include for-phone-only {
+    width: 45%;
+  }
+p{
+  
+  padding: 7px;
     font-size: 26px;
     text-align: center;
     color: #ff6f2b;
     font-weight: 900;
+    
     $map: (576px: 20px, 768px: 24px, 992px: 42px);
     @include poly-fluid-sizing('font-size', $map);
 }
-/* p.telefon {
-  $map: (576px: 20px, 768px: 24px, 992px: 42px);
-  @include poly-fluid-sizing('font-size', $map);
-} */
+
+}
+
 
 .galerea {
   display: flex;
@@ -994,6 +1005,22 @@ font-size: 18px;
   img {
 padding: 5px;
   }
+}
+
+// swiper
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.presentblok {
+  display: block;
 }
 // .flexcolmid {
 //   display: flex;
