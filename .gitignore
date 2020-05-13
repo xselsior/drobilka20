@@ -296,6 +296,11 @@ app/images/img/works/12.jpg
 app/images/img/works/off01.jpg
 app/images/img/works/off02.jpg
 app/images/img/works/off03.jpg
+<<<<<<< Updated upstream
+=======
+app/css/bootstrap.min.css
+app/js/app.min.js
+>>>>>>> Stashed changes
 app/js/bootstrap.min.js
 app/js/jquery.min.js
 app/js/modernizr.min.js
